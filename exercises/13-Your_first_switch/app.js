@@ -1,7 +1,22 @@
-function getColor(selection)
-{
-	switch(selection){
+function getColor(selection){
+
+	var colorEnMinusculas = colortoLowerCase()
+	colsole.log(color.colorEnMinusculas)
+	switch(colorEnMinusculas){
 		// Add more options here
+
+			case "verde":
+			return true:
+			break;
+
+			case "rojo":
+			return true:
+			break;
+
+			case "azul":
+			return true:
+			break;
+
 	    default:
 	    	return false;  //returns false because the user picked an unavailable color
 	    break;               
