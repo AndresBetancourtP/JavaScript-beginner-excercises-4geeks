@@ -1,7 +1,9 @@
-function standardsMaker(){
+// Declare and write your function here:
 
-    for(var estoyAtascado = 0; estoyAtascado <= 300; estoyAtascado++){
-        console.log "I will write questions if I'm stuck"
+const standardsMaker = () => {
+    for (let i = 0; i < 300; i++) {
+        console.log("I will write questions if I'm stuck")
     }
 }
+
 standardsMaker();

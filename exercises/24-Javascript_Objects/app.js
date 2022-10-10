@@ -3,7 +3,7 @@ var person = {
     lastname: "Doe",
     age: 35,                     //Number
     gender: "male",
-    lucky_numbers: [ 7, 11, 13, 17], //Array
+    lucky_numbers: [7, 11, 13, 17], //Array
     significant_other: person2   //Object, yes the same variable/object defined after
 };
 
@@ -12,18 +12,18 @@ var person2 = {
     lastname: "Doe",
     age: 38,
     gender: "female",
-    lucky_numbers: [ 2, 4, 6, 8],
+    lucky_numbers: [2, 4, 6, 8],
     significant_other: person
 };
 
 var person3 = {
-    name: 'Jimmy',
-    lastname: 'Doe',
-    age: '13',
-    gender: 'male',
+    name: "Jimmy",
+    lastname: "Dow",
+    age: 13,
+    gender: "male",
     lucky_numbers: [1, 2, 3, 4],
     significant_other: null
-}
+};
 
 var family = {
     lastname: "Doe",
@@ -31,17 +31,26 @@ var family = {
 };
 
 
-function addAllFamilyLuckyNumbers(anArray){
-  var sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
-    for (let i=0; i<anArray.leigth;i++){
-        for(let x=0;x<anArray[i].lucky_numbers.leigth; x++){
-            sumOfAllLuckyNumbers += anArray[i].lucky_numbers[x];
+
+function addAllFamilyLuckyNumbers(anArray) {
+    var sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
+    let membersQuantity = anArray.length;
+
+    // console.log(membersQuantity);
+
+    for (let i = 0; i < membersQuantity; i++) {
+        let lucky_numbers_length = anArray[0].lucky_numbers.length;
+
+        for (let y = 0; y < lucky_numbers_length; y++) {
+            sumOfAllLuckyNumbers += anArray[i].lucky_numbers[y];
         }
     }
-  //To-Do: loop and add; consider nested loops
-  //Hint: use the anArray variable to get all of the lucky numbers
-  
-  return sumOfAllLuckyNumbers;
+
+    //To-Do: loop and add; consider nested loops
+    //Hint: use the anArray variable to get all of the lucky numbers
+
+
+    return sumOfAllLuckyNumbers;
 }
 
 //Enter all your code here:
