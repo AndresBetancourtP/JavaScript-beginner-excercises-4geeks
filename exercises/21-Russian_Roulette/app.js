@@ -21,4 +21,6 @@ else
 
 console.log(fireGun(spinChamber()));
 
+//hasta el ejercicio 21
+
 
